@@ -5,6 +5,8 @@ channels:
   - bioconda
 dependencies:
   - python=3.10
+  - xlrd=2.0.1
+  - openpyxl=3.0.1
   - pyarrow=11.0.0
   - python-duckdb=0.8.1
   - pip=23.1.2
