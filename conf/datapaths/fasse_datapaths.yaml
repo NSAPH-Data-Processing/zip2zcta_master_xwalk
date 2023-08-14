@@ -1,0 +1,8 @@
+# if the files are stored in fasse, then the paths are: 
+input:
+  uds_raw_xwalks: /n/holyscratch01/dominici_lab/Lab/uds_raw_xwalks
+  #zcta_shapefiles: /n/dominici_lab/lab/data/exposures/exposure/zcta_shapefiles_tigerline
+intermediate:
+  uds_clean_xwalk: /n/holyscratch01/dominici_lab/Lab/uds_clean_xwalk
+output:
+  zip2zcta_master_xwalk: /n/dominici_lab/lab/data/exposures/exposure/zip2zcta_master_xwalk
