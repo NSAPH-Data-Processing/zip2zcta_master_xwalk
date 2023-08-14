@@ -1,0 +1,8 @@
+# if files are stored in the local repository, then use null:
+input:
+  uds_raw_xwalks: null
+  #zcta_shapefiles: null
+intermediate:
+  uds_clean_xwalk: null
+output:
+  zip2zcta_master_xwalk: null

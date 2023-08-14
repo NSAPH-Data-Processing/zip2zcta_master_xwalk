@@ -1,0 +1,16 @@
+name: zip2zcta_master_xwalk_env
+channels:
+  - defaults
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - pyarrow=11.0.0
+  - python-duckdb=0.8.1
+  - pip=23.1.2
+  - pip:
+    - pandas==2.0.3
+    - numpy==1.25.1
+    - ipykernel==6.24.0
+    - hydra-core==1.3
+    - snakemake==7.30.1
