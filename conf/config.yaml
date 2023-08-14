@@ -1,2 +1,7 @@
 defaults:
 - datapaths: datapaths
+- uds_raw_xwalks: uds_raw_xwalks
+
+hydra:
+  run:
+    dir: logs/${now:%Y-%m-%d}/${now:%H-%M-%S}
