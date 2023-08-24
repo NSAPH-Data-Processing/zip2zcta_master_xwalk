@@ -1,0 +1,129 @@
+#datapath: uds_raw_xwalks
+years:
+  2009:
+    url: https://udsmapper.org/wp-content/uploads/2022/10/ZIPCodetoZCTACrosswalk2009UDS.xls
+    zip_col: ZIP
+    zcta_col: ZCTA_USE
+    zip_type_col: ZIPType
+    area_zip_val: S
+    post_office_zip_val: P
+    state_col: StateAbbr
+    #name_cols: [CityName, StateAbbr]
+  2010:
+    url: https://udsmapper.org/wp-content/uploads/2022/10/ZIPCodetoZCTACrosswalk2010UDS.xls
+    zip_col: ZIP
+    zcta_col: ZCTA_USE
+    zip_type_col: ZIPType
+    area_zip_val: S
+    post_office_zip_val: P
+    state_col: StateAbbr
+    #name_cols: [CityName, StateAbbr]
+  2011:
+    url: https://udsmapper.org/wp-content/uploads/2022/10/ZIPCodetoZCTACrosswalk2011UDS.xlsx
+    zip_col: ZIP
+    zcta_col: ZCTA_USE
+    zip_type_col: ZIPType
+    area_zip_val: S
+    post_office_zip_val: P
+    state_col: StateAbbr
+    #name_cols: [CityName, StateAbbr]
+  2012:
+    url: https://udsmapper.org/wp-content/uploads/2022/10/ZIPCodetoZCTACrosswalk2012UDS.xlsx
+    zip_col: ZIP
+    zcta_col: ZCTA_USE
+    zip_type_col: ZIPType
+    area_zip_val: S
+    post_office_zip_val: P
+    state_col: StateAbbr
+    #name_cols: [CityName, StateAbbr]
+  2013:
+    url: https://udsmapper.org/wp-content/uploads/2022/10/ZIPCodetoZCTACrosswalk2013UDS.xlsx
+    zip_col: ZIP
+    zcta_col: ZCTA_USE
+    zip_type_col: ZIPType
+    area_zip_val: "ZIP Code area"
+    post_office_zip_val: "Post Office or large volume customer"
+    state_col: StateAbbr
+    #name_cols: [CityName, StateAbbr]
+  2014:
+    url: https://udsmapper.org/wp-content/uploads/2022/10/ZIPCodetoZCTACrosswalk2014UDS.xlsx
+    zip_col: ZIP
+    zcta_col: ZCTA
+    zip_type_col: ZIP_TYPE
+    area_zip_val: "ZIP Code area"
+    post_office_zip_val: "Post Office or large volume customer"
+    state_col: STATE
+    #name_cols: [PO_NAME, STATE]
+  2015:
+    url: https://udsmapper.org/wp-content/uploads/2022/10/ZipCodetoZCTACrosswalk2015UDS.xlsx
+    zip_col: ZIP
+    zcta_col: ZCTA_USE
+    zip_type_col: ZIPType
+    area_zip_val: "ZIP Code Area"
+    post_office_zip_val: "Post Office or large volume customer"
+    state_col: StateAbbr
+    #name_cols: [CityName, StateAbbr]
+  2016:
+    url: https://udsmapper.org/wp-content/uploads/2022/10/ZIPCodetoZCTACrosswalk2016UDS.xlsx
+    zip_col: ZIP_CODE
+    zcta_col: ZCTA
+    zip_type_col: ZIP_TYPE
+    area_zip_val: "Zip Code Area"
+    post_office_zip_val: "Post Office or large volume customer"
+    state_col: STATE
+    #name_cols: [PO_NAME, STATE]
+    info_col: Zip_join_type
+  2017:
+    url: https://udsmapper.org/wp-content/uploads/2022/10/ZIPCodetoZCTACrosswalk2017UDS.xlsx
+    zip_col: ZIP_CODE
+    zcta_col: ZCTA
+    zip_type_col: ZIP_TYPE
+    area_zip_val: "ZIP Code Area"
+    post_office_zip_val: "Post Office or large volume customer"
+    state_col: STATE
+    #name_cols: [PO_NAME, STATE]
+    info_col: zip_join_type
+  2018:
+    url: https://udsmapper.org/wp-content/uploads/2022/10/ZIPCodetoZCTACrosswalk2018UDS.xlsx
+    zip_col: ZIP_CODE
+    zcta_col: ZCTA
+    zip_type_col: ZIP_TYPE
+    area_zip_val: "Zip Code Area"
+    post_office_zip_val: "Post Office or large volume customer"
+    state_col: STATE
+    #name_cols: [PO_NAME, STATE]
+    no_zcta: "No ZCTA"
+    info_col: zip_join_type
+  2019:
+    url: https://udsmapper.org/wp-content/uploads/2022/10/ZIPCodetoZCTACrosswalk2019UDS.xlsx
+    zip_col: ZIP_CODE
+    zcta_col: ZCTA
+    zip_type_col: ZIP_TYPE
+    area_zip_val: "ZIP Code Area"
+    post_office_zip_val: "Post Office or large volume customer"
+    state_col: STATE
+    #name_cols: [PO_NAME, STATE]
+    no_zcta: "No ZCTA"
+    info_col: zip_join_type
+  2020:
+    url: https://udsmapper.org/wp-content/uploads/2022/10/ZIPCodetoZCTACrosswalk2020UDS.xlsx
+    zip_col: ZIP_CODE
+    zcta_col: ZCTA
+    zip_type_col: ZIP_TYPE
+    area_zip_val: "Zip Code Area"
+    post_office_zip_val: "Post Office or large volume customer"
+    state_col: STATE
+    #name_cols: [PO_NAME, STATE]
+    no_zcta: "No ZCTA"
+    info_col: zip_join_type
+  2021:
+    url: https://udsmapper.org/wp-content/uploads/2023/06/ZIPCodetoZCTACrosswalk2021UDS.xlsx
+    zip_col: ZIP_CODE
+    zcta_col: ZCTA
+    zip_type_col: ZIP_TYPE
+    area_zip_val: "Zip Code Area"
+    post_office_zip_val: "Post Office or large volume customer"
+    state_col: STATE
+    #name_cols: [PO_NAME, STATE]
+    no_zcta: "No ZCTA"
+    info_col: zip_join_type
