@@ -1,7 +1,7 @@
-import logging
 import pandas as pd
-import hydra
 import requests
+import logging
+import hydra
 
 LOGGER = logging.getLogger(__name__)
 
@@ -20,12 +20,12 @@ def main(cfg):
     }
     
     ## download the raw uds crosswalks which are xlsx files ----
-    for year, xwalk_dict in cfg.uds_raw_xwalks.years.items():
+    for year, xwalk_metadata in cfg.uds_raw_xwalks.years.items():
 
         LOGGER.info(f"Downloading {year} crosswalk")
         
         ## get url ----
-        url = xwalk_dict.url
+        url = xwalk_metadata.url
         
         ## get file extension ----
         ext = url.split(".")[-1] # UDS files are xls or xlsx 
