@@ -30,31 +30,13 @@ These different editions allow for consistent analysis over time while accommoda
 
 A ZIP2ZCTA crosswalk is essentially a mapping between these two systems. It allows users to translate between ZIP Codes and ZCTAs, and it can be essential for researchers, policymakers, and others who need to correlate postal information with demographic or economic data collected by the Census Bureau.
 
-## Motivation
+> The UDSmapper offers yearly crosswalks from 2009 onwards. Yearly releases are not harmonized. In this repository, we offer a zip2zcta master xwalk that can be used across years. The master xwalk keeps all zipcodes that are retired at some point and resolves disambiguities when they exist.
 
-**zcta** 
+## References
 
-* In theory, zctas change every 10 years and there are currently three editions: zcta500, zcta510 and zcta520
-* In practice, there are yearly zcta shp file realeases. For the same editions there might be small differences between the releases.
+Grubesic TH, Matisziw TC. On the use of ZIP codes and ZIP code tabulation areas (ZCTAs) for the spatial analysis of epidemiological data. Int J Health Geogr. 2006 Dec 13;5:58. doi: 10.1186/1476-072X-5-58. PMID: 17166283; PMCID: PMC1762013.
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1762013/
 
-**zipcode**
-
-* In theory, zipcodes change yearly. There are several providers of shapefiles for zipcodes, there is not an official USPS realease.
-* ESRI provides yearly releases of zipcode shapefiles which exclude poboxes.
-
-**xwalks**
-
-* Zipcodes are "smaller" than zctas. Zipcode to zcta crosswalks have a single entry per zipcode. There might be zctas that point to multiple zipcodes. 
-* There is no official zip2zcta xwalk.
-* USD provides xwalks 2009 onwards. The yearly releases are not harmonized: there are changes in column names and other file format changes.
-* Within a single zcta edition, there are small differences in the zip to zcta mapping across years.
-
-**Questions**
-
-* Is it worth using yearwise crosswalks?
-
-For the most part, the crosswalk entries will have the same mapping every year. Also, when merging by year-zip to year-zcta, a different logic would have to be applied for years prior to 2009. 
-
-**Conclusion**
-It make sense to have a single master zip2zcta crosswalk and shapefile that applies to all zcta editions that incorporate all retired zipcodes and retired zctas.
+Krieger N, Waterman P, Chen JT, Soobader MJ, Subramanian SV, Carson R. Zip code caveat: bias due to spatiotemporal mismatches between zip codes and US census-defined geographic areas--the Public Health Disparities Geocoding Project. Am J Public Health. 2002 Jul;92(7):1100-2. doi: 10.2105/ajph.92.7.1100. PMID: 12084688; PMCID: PMC1447194.
+https://pubmed.ncbi.nlm.nih.gov/12084688/
 
