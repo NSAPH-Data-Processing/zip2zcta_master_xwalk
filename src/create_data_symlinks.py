@@ -4,7 +4,7 @@ import hydra
 
 LOGGER = logging.getLogger(__name__)
 
-@hydra.main(config_path="conf", config_name="config", version_base=None)
+@hydra.main(config_path="../conf", config_name="config", version_base=None)
 def main(cfg):
     """Create data subfolders and symbolic links if indicated in config file."""
     

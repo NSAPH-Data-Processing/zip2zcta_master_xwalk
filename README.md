@@ -78,6 +78,10 @@ Zip types as described in the UDS mapper site:
 * [src/create_clean_uds.py](src/create_clean_uds.py) creates a single clean crosswalk from the raw crosswalks.
 * [src/master_xwalk.py](src/master_xwalk.py) applies processing decisions to obtain a single row for each zipcode.
 
+**data**
+* Input, intermediate and output data placeholders
+* [data/metadata.yml](data/metadata.yml) summarizes key description elements for the output dataset. 
+
 **conf**
 * Configuration files containing the input arguments utilized in the scripts that make up the pipeline.
 
@@ -135,6 +139,8 @@ Run:
 python src/create_data_symlinks.py
 ```
 
+Additional instructions are found in [data/README.md](data/README.md).
+
 **Run scripts** Run the main scripts:
 
 ```bash
@@ -144,6 +150,8 @@ python src/master_xwalk.py
 ```
 
 or **run the pipeline**:
+
+* Modify the configuration inputs on [conf/config.yaml] as necessary
 
 ```bash
 snakemake --cores 1
