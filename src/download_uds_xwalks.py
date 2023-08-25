@@ -5,7 +5,7 @@ import hydra
 
 LOGGER = logging.getLogger(__name__)
 
-@hydra.main(config_path="conf", config_name="config", version_base=None)
+@hydra.main(config_path="../conf", config_name="config", version_base=None)
 def main(cfg):
     """
     Download zip to zcta crosswalks from the UDS website and convert to csv.
