@@ -11,7 +11,6 @@ data_profile:
   unit: zipcode, zcta
 
 fields:
-fields:
   - name: zip
     type: character
     description: 5-digit ZIP code. A postal code used by the United States Postal Service.
