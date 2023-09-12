@@ -2,6 +2,8 @@
 
 The code cleans crosswalks offered by the UDS mapper at https://udsmapper.org/zip-code-to-zcta-crosswalk/. The purpose is to have a single master zip2zcta crosswalk that can be used across years.
 
+> The UDSmapper offers yearly crosswalks from 2009 onwards. Yearly releases are not harmonized. In this repository, we offer a zip2zcta master xwalk that can be used across years. The master xwalk keeps all zipcodes that are retired at some point and resolves disambiguities when they exist.
+
 ## Zip vs ZCTA
 
 A ZIP Code is a postal code used by the United States Postal Service (USPS). Introduced in 1963, the term "ZIP" is an acronym for "Zone Improvement Plan," and it was implemented to improve the accuracy and efficiency of the delivery of mail within the United States.
@@ -29,8 +31,6 @@ These different editions allow for consistent analysis over time while accommoda
 ## ZIP2ZCTA crosswalks
 
 A ZIP2ZCTA crosswalk is essentially a mapping between these two systems. It allows users to translate between ZIP Codes and ZCTAs, and it can be essential for researchers, policymakers, and others who need to correlate postal information with demographic or economic data collected by the Census Bureau.
-
-> The UDSmapper offers yearly crosswalks from 2009 onwards. Yearly releases are not harmonized. In this repository, we offer a zip2zcta master xwalk that can be used across years. The master xwalk keeps all zipcodes that are retired at some point and resolves disambiguities when they exist.
 
 ## References
 
