@@ -12,12 +12,15 @@ def main(cfg):
     """
 
     # define http headers required so that the download is not rejected
+    # headers = {
+    #     "User-Agent": (
+    #         "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+    #         " AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+    #     )
+    # }
     headers = {
-        "User-Agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-            " AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
-        )
-    }
+        "User-Agent": "curl/7.68.0"
+    } 
     
     ## download the raw uds crosswalks which are xlsx files ----
     for year, xwalk_metadata in cfg.uds_raw_xwalks.years.items():
