@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y build-essential
 WORKDIR /app
 
 # Clone your repository
-RUN git clone --branch v1.1 --single-branch https://github.com/NSAPH-Data-Processing/zip2zcta_master_xwalk.git . 
+RUN git clone --branch v1.2 --single-branch https://github.com/NSAPH-Data-Processing/zip2zcta_master_xwalk.git . 
 
 # Update the base environment
 RUN mamba env update -n base -f requirements.yml 
