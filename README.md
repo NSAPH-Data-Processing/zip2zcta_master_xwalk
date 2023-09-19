@@ -159,6 +159,17 @@ snakemake --cores 1
 
 `cores` determine number of processes that can be executed in parallel. In this pipeline only 1 is needed.
 
-### Container
+## Dockerized Pipeline
 
-To be included
+Create the folder where you would like to store the output dataset.
+
+```bash 
+mkdir <path>/zip2zcta_master_xwalk/
+```
+
+### Pull and Run:
+
+```bash
+docker pull nsaph/zip2zcta_master_xwalk:v1.1
+docker run -v <path>/zip2zcta_master_xwalk/:/app/data/output/zip2zcta_master_xwalk nsaph/zip2zcta_master_xwalk:v1.1
+```
