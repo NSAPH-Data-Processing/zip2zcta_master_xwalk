@@ -170,14 +170,14 @@ mkdir <path>/zip2zcta_master_xwalk/
 ### Pull and Run:
 
 ```bash
-docker pull nsaph/zip2zcta_master_xwalk:v1.2
-docker run -v <path>/zip2zcta_master_xwalk/:/app/data/output/zip2zcta_master_xwalk nsaph/zip2zcta_master_xwalk:v1.2
+docker pull nsaph/zip2zcta_master_xwalk
+docker run -v <path>/zip2zcta_master_xwalk/:/app/data/output/zip2zcta_master_xwalk nsaph/zip2zcta_master_xwalk
 ```
 
 If you are interested in storing the input raw and intermediate data run
 
 ```bash
-docker run -v ./data:/app/data/ nsaph/zip2zcta_master_xwalk:v1.2
+docker run -v ./data:/app/data/ nsaph/zip2zcta_master_xwalk
 ```
 
 If you want to build your own image use
