@@ -1,0 +1,12 @@
+domain: common
+schema: public
+quoting: None
+header: true
+index: "unless excluded"
+tables:
+  zip2zcta_xwalk:
+    primary_key:
+      - zip
+      - zcta
+      - year_match
+  
