@@ -2,4 +2,4 @@ metadata: "data/metadata/metadata.yml"
 dorieh-metadata: "data/metadata/dorieh-metadata.yaml"
 docker:
   image: "nsaph/zip2zcta_master_xwalk"
-  run: "nsaph/zip2zcta_master_xwalk"
+  run: $CMD
