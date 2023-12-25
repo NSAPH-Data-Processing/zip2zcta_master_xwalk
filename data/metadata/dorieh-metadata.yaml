@@ -4,7 +4,7 @@ quoting: None
 header: true
 index: "unless excluded"
 tables:
-  zip2zcta_xwalk:
+  zip2zcta_master_xwalk:
     primary_key:
       - zip
       - zcta
