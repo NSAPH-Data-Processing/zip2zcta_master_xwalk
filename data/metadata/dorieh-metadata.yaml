@@ -1,6 +1,6 @@
 domain: common
 schema: public
-quoting: None
+quoting: MINIMAL
 header: true
 index: "unless excluded"
 tables:
