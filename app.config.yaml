@@ -1,0 +1,8 @@
+### Configuration required to ingest data into Dorieh
+### See: https://github.com/NSAPH-Data-Platform/nsaph-core-platform/blob/app_ingestion_1/doc/AppPipelineGenerator.md 
+metadata: "data/metadata/metadata.yml"
+dorieh-metadata: "data/metadata/dorieh-metadata.yaml"
+docker:
+  image: "nsaph/zip2zcta_master_xwalk"
+  run: $CMD
+  outputdir: data/output/zip2zcta_master_xwalk
