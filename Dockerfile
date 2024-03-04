@@ -15,4 +15,8 @@ RUN mamba env update -n base -f requirements.yml
 # Create symlinks to data placeholders
 RUN python src/create_data_symlinks.py
 
+# Copy configuration inside container
+RUN mkdir -p "/opt/local/app/"
+COPY app.config.yaml data/metadata/* /opt/local/app/
+
 CMD ["snakemake", "--cores", "1"]

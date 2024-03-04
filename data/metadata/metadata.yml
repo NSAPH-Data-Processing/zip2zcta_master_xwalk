@@ -1,59 +1,48 @@
-dataset_name: Zip2zcta Master Xwalk
+dataset_name: zip2zcta_master_walk
 description: The master crosswalk file maps U.S. ZIP codes to their respective ZIP Code Tabulation Areas (ZCTAs), capturing the discrepancies and characteristics of the ZIP-ZCTA relationships across the different yearly UDS crosswalks.
-
-files:
-  - zip2zcta_master_xwalk.csv
-
 data_profile:
   time_coverage: NA
   state_coverage: all US states 
   population_coverage: NA
   unit: zipcode, zcta
-
 fields:
-  - name: zip
-    type: character
-    description: 5-digit ZIP code. A postal code used by the United States Postal Service.
-  - name: zcta
-    type: character
-    description: 5-digit ZIP Code Tabulation Area (ZCTA) code. Codes used by the U.S. Census Bureau for tabulating summary statistics. In this dataset, it represents which ZCTA the ZIP code matches with.
-  - name: year_match
-    type: int
-    description: Year of zip and zcta match. Represents the year when the mapping between the ZIP code and ZCTA is recorded in the raw uds xwalsk.
-  - name: census_edition
-    type: character
-    description: Edition or version of the census data source from which the ZCTA information was derived. "ZCTA5CE20" indicates a 2020 Census ZCTA 5-digit edition.
-  - name: state
-    type: character
-    description: 2-character state code. Represents the U.S. state or territory where the ZIP code is located.
-  - name: is_area
-    type: boolean
-    description: A boolean flag (True/False) indicating if the ZIP code type is a ZIP Code Area.
-  - name: is_self_mapped
-    type: boolean
-    description: A boolean flag (True/False) indicating if the ZIP code directly maps to the ZCTA (i.e., they are the same). This can be useful in identifying ZIP codes that don't need additional conversion for census-based studies.
-  - name: is_post_office
-    type: boolean
-    description: A boolean flag (True/False) indicating if the ZIP code type is a post office or large volume customer (pobox). That is, a postal delivery point rather than a general area.
-  - name: info
-    type: character
-    description: Provides additional context or information on the relation between the ZIP and ZCTA. For instance, "Spatial join to ZCTA" indicates that the ZIP was mapped to a ZCTA using spatial data, while "Zip matches ZCTA" indicates a direct match without any spatial consideration.
-  - name: min_match
-    type: int
-    description: Minimum year match. Represents the first year a particular ZIP-ZCTA relationship was recorded in the raw uds crosswalks.
-  - name: max_match
-    type: int
-    description: Maximum year match. Represents the most recent year a particular ZIP-ZCTA relationship was recorded in the raw uds crosswalks.
-  - name: year_matches
-    type: int
-    description: Number of year matches. Number of year entries exist for each zip code in the original uds crosswalks. This can be an indication of how frequently or consistently the relationship has been noted over time.
-  - name: zcta_matches
-    type: int
-    description: Number of zcta matches. This counts the number of distinct zcta values associated with each distinct zip code in the original uds crosswalks. This can be used to determine if a ZIP code has multiple corresponding ZCTAs over different years or editions of the census data.
-
-data_processing:
-  - repository: https://github.com/NSAPH-Data-Processing/zip2zcta_master_xwalk
-
-maintainers:
-  - name: Michelle Audirac
-    github_user: audiracmichelle
+  zip2zcta_master_xwalk:
+    - name: zip
+      type: character
+      description: 5-digit ZIP code. A postal code used by the United States Postal Service.
+    - name: zcta
+      type: character
+      description: 5-digit ZIP Code Tabulation Area (ZCTA) code. Codes used by the U.S. Census Bureau for tabulating summary statistics. In this dataset, it represents which ZCTA the ZIP code matches with.
+    - name: year_match
+      type: int
+      description: Year of zip and zcta match. Represents the year when the mapping between the ZIP code and ZCTA is recorded in the raw uds xwalsk.
+    - name: census_edition
+      type: character
+      description: Edition or version of the census data source from which the ZCTA information was derived. "ZCTA5CE20" indicates a 2020 Census ZCTA 5-digit edition.
+    - name: state
+      type: character
+      description: 2-character state code. Represents the U.S. state or territory where the ZIP code is located.
+    - name: is_area
+      type: boolean
+      description: A boolean flag (True/False) indicating if the ZIP code type is a ZIP Code Area.
+    - name: is_self_mapped
+      type: boolean
+      description: A boolean flag (True/False) indicating if the ZIP code directly maps to the ZCTA (i.e., they are the same). This can be useful in identifying ZIP codes that don't need additional conversion for census-based studies.
+    - name: is_post_office
+      type: boolean
+      description: A boolean flag (True/False) indicating if the ZIP code type is a post office or large volume customer (pobox). That is, a postal delivery point rather than a general area.
+    - name: info
+      type: character
+      description: Provides additional context or information on the relation between the ZIP and ZCTA. For instance, "Spatial join to ZCTA" indicates that the ZIP was mapped to a ZCTA using spatial data, while "Zip matches ZCTA" indicates a direct match without any spatial consideration.
+    - name: min_match
+      type: int
+      description: Minimum year match. Represents the first year a particular ZIP-ZCTA relationship was recorded in the raw uds crosswalks.
+    - name: max_match
+      type: int
+      description: Maximum year match. Represents the most recent year a particular ZIP-ZCTA relationship was recorded in the raw uds crosswalks.
+    - name: year_matches
+      type: int
+      description: Number of year matches. Number of year entries exist for each zip code in the original uds crosswalks. This can be an indication of how frequently or consistently the relationship has been noted over time.
+    - name: zcta_matches
+      type: int
+      description: Number of zcta matches. This counts the number of distinct zcta values associated with each distinct zip code in the original uds crosswalks. This can be used to determine if a ZIP code has multiple corresponding ZCTAs over different years or editions of the census data.
