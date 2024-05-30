@@ -1,7 +1,7 @@
 #datapath: uds_raw_xwalks
 years:
   2009:
-    url: https://udsmapper.org/wp-content/uploads/2022/10/ZIPCodetoZCTACrosswalk2009UDS.xls
+    url: https://github.com/NSAPH-Data-Processing/uds-mapper/blob/main/data/data_raw/ZIPCodetoZCTACrosswalk2009UDS.xls
     zip_col: ZIP
     zcta_col: ZCTA_USE
     zip_type_col: ZIPType
