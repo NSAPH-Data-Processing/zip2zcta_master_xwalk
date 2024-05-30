@@ -10,7 +10,7 @@ years:
     state_col: StateAbbr
     #name_cols: [CityName, StateAbbr]
   2010:
-    url: https://udsmapper.org/wp-content/uploads/2022/10/ZIPCodetoZCTACrosswalk2010UDS.xls
+    url: https://github.com/NSAPH-Data-Processing/uds-mapper/blob/main/data/data_raw/ZIPCodetoZCTACrosswalk2010UDS.xls
     zip_col: ZIP
     zcta_col: ZCTA_USE
     zip_type_col: ZIPType
