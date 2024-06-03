@@ -99,7 +99,7 @@ def main():
     LOGGER.info("""
         ## Saving ----
         """)
-    df.to_csv("data/output/zip2zcta_master_xwalk/zip2zcta_master_xwalk.csv", index=False)
+    df.to_csv("data/output/zip2zcta_master_xwalk/zip2zcta_master_xwalk.csv", index=False, na_rep='NA')
 
 if __name__ == "__main__":
     main()
