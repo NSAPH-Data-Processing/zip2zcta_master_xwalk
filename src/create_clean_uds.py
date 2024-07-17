@@ -100,7 +100,7 @@ def main(cfg):
 
     # save the parquet file
     LOGGER.info("## Saving cross-year clean crosswalk ----")
-    outdf.to_csv("data/intermediate/uds_clean_xwalk/uds_clean_xwalk.csv", index=False)
+    outdf.to_csv("data/intermediate/uds_clean_xwalk/uds_clean_xwalk.csv", index=False, sep=";")
 
 if __name__ == "__main__":
     main()
