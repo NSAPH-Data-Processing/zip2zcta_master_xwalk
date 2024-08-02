@@ -1,4 +1,5 @@
-# zip_zcta_master_xwalks
+# zip2zcta_master_xwalks
+[![](<https://img.shields.io/badge/Dataverse-10.7910/DVN/SYNPBS-orange>)](https://doi.org/10.7910/DVN/HYNJSZ)
 
 The code cleans crosswalks offered by the UDS mapper at https://udsmapper.org/zip-code-to-zcta-crosswalk/. The purpose is to have a single master zip2zcta crosswalk that can be used across years.
 
@@ -110,6 +111,22 @@ Inputs:
 1. Assign to each zip the zcta that corresponds to the most recent crosswalk.
 2. Identify summary characteristics of zip to zcta cross-year matches such as the first year the zipcode is included in a uds crosswalk.
 
+## Open datasets
+
+Output crosswalks can be found on the Harvard Dataverse [https://doi.org/10.7910/DVN/HYNJSZ](https://doi.org/10.7910/DVN/HYNJSZ). To cite with Bibtex use:
+```
+@data{DVN/HYNJSZ_2024,
+author = {Audirac, Michelle},
+publisher = {Harvard Dataverse},
+title = {{Zip2zcta master xwalk}},
+UNF = {UNF:6:pZqmbScz/osTypCKIXPFNQ==},
+year = {2024},
+version = {V1},
+doi = {10.7910/DVN/HYNJSZ},
+url = {https://doi.org/10.7910/DVN/HYNJSZ}
+}
+```
+
 ## Run
 
 ### Conda Environment
@@ -180,7 +197,15 @@ If you are interested in storing the input raw and intermediate data run
 docker run -v ./data:/app/data/ nsaph/zip2zcta_master_xwalk
 ```
 
-If you want to build your own image use
-```
+
+**Building the image**
+
+To create your own docker image
+```bash
 docker build -t <image_name> .
+```
+
+For a multiarch built do
+```bash
+docker buildx build --platform linux/amd64,linux/arm64 -t <image_name> . --push
 ```
