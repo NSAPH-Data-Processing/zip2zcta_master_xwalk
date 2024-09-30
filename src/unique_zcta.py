@@ -47,6 +47,34 @@ def main():
     LOGGER.info(f"Head: {df.head()}")
     LOGGER.info(f"Shape: {df.shape}")
     LOGGER.info(f"Number of unique zcta per census edition: {df.groupby('census_edition').zcta.nunique()}")
+
+    LOGGER.info("""
+        ## Expand all years in a census edition ----
+    """)
+    query = """
+        WITH expanded_years AS (
+            SELECT zcta, 
+                UNNEST(generate_series(2000, 2009)) AS year, 
+                'ZCTA5CE00' AS census_edition
+            FROM df WHERE census_edition = 'ZCTA5CE00'
+            UNION ALL
+            SELECT zcta, 
+                UNNEST(generate_series(2010, 2019)) AS year, 
+                'ZCTA5CE10' AS census_edition
+            FROM df WHERE census_edition = 'ZCTA5CE10'
+            UNION ALL
+            SELECT zcta, 
+                UNNEST(generate_series(2020, 2029)) AS year, 
+                'ZCTA5CE20' AS census_edition
+            FROM df WHERE census_edition = 'ZCTA5CE20'
+        )
+        SELECT * FROM expanded_years
+        ORDER BY zcta, year
+    """
+    df = conn.execute(query).fetchdf()
+    LOGGER.info(f"Head: {df.head()}")
+    LOGGER.info(f"Shape: {df.shape}")
+    LOGGER.info(f"Number of unique zcta per year: {df.groupby('year').zcta.nunique()}")
     
     LOGGER.info("""
     ## Saving ----
