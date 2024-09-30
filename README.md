@@ -74,7 +74,7 @@ Zip types as described in the UDS mapper site:
 ## Content
 
 **src**
-* [src/create_data_symlinks.py](src/create_data_symlinks.py) Creates data subfolders and symbolic links if indicated in the [datapaths](conf/datapath) config file.
+* [src/create_dir_paths.py](src/create_dir_paths.py) Creates data subfolders and symbolic links if indicated in the [datapaths](conf/datapath) config file.
 * [src/download_uds_xwalks.py](src/download_uds_xwalks.py) Downloads uds xwalks from source url's.
 * [src/create_clean_uds.py](src/create_clean_uds.py) creates a single clean crosswalk from the raw crosswalks.
 * [src/master_xwalk.py](src/master_xwalk.py) applies processing decisions to obtain a single row for each zipcode.
@@ -153,7 +153,7 @@ mamba activate <env_name>
 Run:
 
 ```bash
-python src/create_data_symlinks.py
+python src/create_dir_paths.py
 ```
 
 Additional instructions are found in [data/README.md](data/README.md).
