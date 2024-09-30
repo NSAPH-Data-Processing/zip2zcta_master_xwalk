@@ -100,6 +100,7 @@ def main():
         ## Saving ----
         """)
     df.to_csv("data/output/zip2zcta_master_xwalk/zip2zcta_master_xwalk.csv", index=False, na_rep='NA')
+    df.to_parquet("data/output/zip2zcta_master_xwalk/zip2zcta_master_xwalk.parquet", index=False, engine='pyarrow')
 
 if __name__ == "__main__":
     main()
