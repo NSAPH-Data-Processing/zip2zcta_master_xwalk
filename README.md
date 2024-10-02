@@ -164,6 +164,7 @@ Additional instructions are found in [data/README.md](data/README.md).
 python src/download_uds_xwalks.py
 python src/create_clean_uds.py
 python src/master_xwalk.py
+python src/unique_zcta.py
 ```
 
 or **run the pipeline**:
