@@ -78,6 +78,7 @@ Zip types as described in the UDS mapper site:
 * [src/download_uds_xwalks.py](src/download_uds_xwalks.py) Downloads uds xwalks from source url's.
 * [src/create_clean_uds.py](src/create_clean_uds.py) creates a single clean crosswalk from the raw crosswalks.
 * [src/master_xwalk.py](src/master_xwalk.py) applies processing decisions to obtain a single row for each zipcode.
+* [src/unique_zcta.py](src/unique_zcta.py) Extracts unique ZCTAs from uds xwalks, maps them to census editions and expands them across years.
 
 **data**
 * Input, intermediate and output data placeholders
