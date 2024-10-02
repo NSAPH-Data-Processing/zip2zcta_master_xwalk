@@ -19,8 +19,7 @@ def main():
     CE['2010'] = 'ZCTA5CE10'
     CE['2020'] = 'ZCTA5CE20'
 
-    df = conn.execute(
-        """
+    query = """
         SELECT 
             DISTINCT 
                 zcta, 
@@ -30,7 +29,8 @@ def main():
             'data/intermediate/uds_clean_xwalk/uds_clean_xwalk.csv'
         ORDER BY
             zcta, year
-        """).fetchdf()
+    """
+    df = conn.execute(query).fetchdf()
 
     LOGGER.info(f"Head: {df.head()}")
     LOGGER.info(f"Shape: {df.shape}")
