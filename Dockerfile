@@ -13,7 +13,7 @@ RUN mamba env update -n base -f requirements.yml
 #&& mamba clean -a
 
 # Create symlinks to data placeholders
-RUN python src/create_data_symlinks.py
+RUN python src/create_dir_paths.py
 
 # Copy configuration inside container
 RUN mkdir -p "/opt/local/app/"

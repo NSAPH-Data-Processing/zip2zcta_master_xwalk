@@ -1,10 +1,7 @@
 # if the files are stored in cannon, then the paths are: 
 input:
-  uds_raw_xwalks: null
-  #/n/holyscratch01/dominici_lab/Lab/uds_raw_xwalks
-  #zcta_shapefiles: /n/dominici_lab/lab/data/exposures/exposure/zcta_shapefiles_tigerline
+  uds_raw_xwalks: /n/dominici_lab/lab/lego/geoboundaries/zip2zcta__uds/raw
 intermediate:
-  uds_clean_xwalk: null
-  #/n/holyscratch01/dominici_lab/Lab/uds_clean_xwalk
+  uds_clean_xwalk: /n/dominici_lab/lab/lego/geoboundaries/zip2zcta__uds/.intermediate
 output:
-  zip2zcta_master_xwalk: /n/dominici_lab/lab/data/exposures/exposure/zip2zcta_master_xwalk
+  zip2zcta_master_xwalk: /n/dominici_lab/lab/lego/geoboundaries/zip2zcta__uds/xwalk
