@@ -1,7 +1,7 @@
 # zip2zcta_master_xwalks
 [![](<https://img.shields.io/badge/Dataverse-10.7910/DVN/SYNPBS-orange>)](https://doi.org/10.7910/DVN/HYNJSZ)
 
-The code cleans crosswalks offered by the UDS mapper at https://udsmapper.org/zip-code-to-zcta-crosswalk/. The purpose is to have a single master zip2zcta crosswalk that can be used across years.
+The code cleans crosswalks offered by the UDS mapper at https://udsmapper.org/ (status:out-of-service, date noted: Dec 2024). The purpose is to have a single master zip2zcta crosswalk that can be used across years.
 
 > The UDSmapper offers yearly crosswalks from 2009 onwards. Yearly releases are not harmonized. In this repository, we offer a zip2zcta master xwalk that can be used across years. The master xwalk keeps all zipcodes that are retired at some point and resolves disambiguities when they exist.
 
